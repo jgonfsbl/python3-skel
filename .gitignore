@@ -172,5 +172,4 @@ dmypy.json
 .pytype/
 # Cython debug symbols
 cython_debug/
-# Test / PyTest
-tests/
+
