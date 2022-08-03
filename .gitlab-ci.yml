@@ -54,7 +54,7 @@ flake8:
     - virtualenv venv
     - source venv/bin/activate
     - pip install -U pip
-    - pip install -r iac/requirements/devel.txt
+    - pip install -r requirements/devel.txt
     - echo "----------------------------------------"
     - pwd
     - ls -l
@@ -72,7 +72,7 @@ pylint:
     - virtualenv venv
     - source venv/bin/activate
     - pip install -U pip
-    - pip install -r iac/requirements/devel.txt
+    - pip install -r requirements/devel.txt
     - echo "----------------------------------------"
     - pwd
     - ls -l
@@ -95,7 +95,7 @@ bandit:
     - virtualenv venv
     - source venv/bin/activate
     - pip install -U pip
-    - pip install -r iac/requirements/devel.txt
+    - pip install -r requirements/devel.txt
     - echo "----------------------------------------"
     - pwd
     - ls -l
@@ -129,7 +129,7 @@ jake:
     - virtualenv venv
     - source venv/bin/activate
     - pip install -U pip
-    - pip install -r iac/requirements/devel.txt
+    - pip install -r requirements/devel.txt
     - echo "----------------------------------------"
     - pwd
     - ls -l
@@ -156,7 +156,7 @@ pytest:
     - virtualenv venv
     - source venv/bin/activate
     - pip install -U pip
-    - pip install -r iac/requirements/devel.txt
+    - pip install -r requirements/devel.txt
     - echo "----------------------------------------"
     - pwd
     - ls -l
@@ -168,7 +168,6 @@ pytest:
     - python -c "import sys;print(sys.path)"
     - covorage erase
     - coverage run -m pytest
-    #- coverage report
     - coverage report --fail-under 80 --include tests/*
     - coverage xml
   artifacts:
