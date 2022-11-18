@@ -2,11 +2,11 @@
   "ignore": [
     {
       "id": "sonatype-2014-0148",
-      "reason": "Insert reason here"
+      "reason": "setuptools 65.5.1"
     },
     {
       "id": "CVE-2018-20225",
-      "reason": "Insert reason here"
+      "reason": "pip 22.3.1"
     }
   ]
 }
