@@ -98,7 +98,7 @@ jake:
 # Stage 4: Application testing
 #
 # Unit Testing via PyTest
-# Test coverage parsing in GitLab config: ^TOTAL.+?(\d+\%)$
+# Test coverage parsing in GitLab config: '^TOTAL.+?(\d+\%)$' or '/TOTAL.*\s+(\d+%)$/'
 pytest:
   stage: Test
   allow_failure: true
@@ -111,6 +111,7 @@ pytest:
     - coverage run -m pytest
     - coverage report --fail-under=80 --no-skip-covered --include="tests/*"
     - coverage xml --fail-under=80 -o tests/coverage.xml
+  coverage: '/TOTAL.*\s+(\d+%)$/'
   artifacts:
     reports:
       coverage_report:
