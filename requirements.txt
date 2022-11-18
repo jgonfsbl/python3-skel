@@ -1,2 +1,2 @@
-# Mirrors master (production)
--r requirements/master.txt
+# Mirrors main (production)
+-r requirements/main.txt
