@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    {
+      "id": "sonatype-2014-0148",
+      "reason": "Insert reason here"
+    },
+    {
+      "id": "CVE-2018-20225",
+      "reason": "Insert reason here"
+    }
+  ]
+}
