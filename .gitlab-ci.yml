@@ -161,8 +161,6 @@ deploy-to-prod:
 cleanup:
   stage: Cleanup
   allow_failure: true
-  before_script:
-    - python3 -V
   script:
     - echo "Clean up takes place here"
 
