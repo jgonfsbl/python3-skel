@@ -1,2 +1,0 @@
-# Specifies only master-specific (production) requirements, but imports the common ones as well.
--r common.txt

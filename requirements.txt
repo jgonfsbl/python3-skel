@@ -1,2 +1,0 @@
-# Mirrors main (production)
--r requirements/main.txt
